@@ -1,0 +1,33 @@
+.home-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  min-height: 100vh;
+}
+
+.home-wrapper img {
+  max-width: 100%;
+  width: 350px;
+  height: auto;
+}
+.sticky {
+  box-shadow: 0 4px -5px rgba(0, 0, 0, 0.5);
+  background: gray;
+}
+
+.home-wrapper .home-btn {
+  margin-top: 3rem;
+}
+@media screen and (max-width: 800px) {
+  .home-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .home-wrapper .home-img {
+    text-align: center;
+  }
+  .home-wrapper .home-title {
+    padding-top: 2rem;
+  }
+}

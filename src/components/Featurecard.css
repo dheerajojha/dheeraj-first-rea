@@ -1,0 +1,9 @@
+.feature-box {
+  text-align: center;
+  padding: 1rem;
+  backdrop-filter: blur(23px) saturate(180%);
+  -webkit-backdrop-filter: blur(23px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}

@@ -1,13 +1,72 @@
-body {
+/* <---------------------------------universal------------------------------>*/
+:root {
+  --main_color: rgb(75, 75, 205);
+  --text_color: #fff;
+  --bg_color: rgb(19, 12, 12);
+  --big_font: 6vmin;
+  --h2: 3vmin;
+  --p: 2vmin;
+  --effect: 0.5s ease-in-out;
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* border: 1px solid red; */
+}
+body {
+  background: var(--bg_color);
+  overflow-x: hidden;
+}
+li {
+  list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: white;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  font-size: var(--big_font);
+  letter-spacing: 0.8rem;
+}
+h2 {
+  font-size: var(--h2);
+}
+p {
+  font-size: var(--p);
+  color: var(--text_color);
+  line-height: 1.2rem;
+}
+
+.btn {
+  padding: 0.7rem 1.7rem;
+  color: black;
+  background: yellow;
+  border: 1px dotted white;
+  margin: 0 1rem;
+}
+
+.heading {
+  text-align: center;
+  padding: 2.5rem 0;
+}
+
+section {
+  padding: 50px 10%;
+}
+
+@media screen and (max-width: 1450px) {
+  section {
+    padding: 40px 3%;
+    transition: var(--effect);
+  }
+
+  header {
+    padding: 5px 3%;
+    transition: var(--effect);
+  }
 }

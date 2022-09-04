@@ -1,0 +1,46 @@
+.contact-wrapper {
+  min-height: 80vh;
+  width: 100%;
+}
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+form input,
+textarea {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid gray;
+  outline: none;
+  background: transparent;
+}
+.contact-text h2 {
+  margin-top: -0.5rem;
+  line-height: 2rem;
+}
+
+.contact-text h3 {
+  line-height: 2rem;
+  margin-top: 1rem;
+}
+
+.icons {
+  color: var(--main_color);
+  margin-bottom: -0.5rem;
+  margin-right: 0.8rem;
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 800px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}

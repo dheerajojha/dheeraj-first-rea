@@ -1,0 +1,71 @@
+/* <!------------------------------ HEADER --------------------------------> */
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 10%;
+}
+
+header .myul .navlink {
+  padding: 0rem 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+header .myul {
+  display: flex;
+}
+
+header .hamberger {
+  display: none;
+  cursor: pointer;
+}
+header .logo {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  padding: 0.5rem;
+}
+
+@media screen and (max-width: 1080px) {
+  header {
+    padding: 0;
+  }
+  .myul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    align-items: center;
+    transform: rotate(360deg);
+    filter: opacity(0);
+    justify-content: center;
+    transition: var(--effect);
+    background: rgba(0, 0, 0, 0.9);
+  }
+
+  header .myul li {
+    padding: 1.5rem 0rem;
+  }
+  .myul.active {
+    filter: opacity(100%);
+  }
+
+  header .hamberger {
+    display: initial;
+  }
+  header .hamberger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5rem;
+  }
+}
